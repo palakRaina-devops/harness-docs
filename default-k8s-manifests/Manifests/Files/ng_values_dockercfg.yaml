@@ -1,8 +1,8 @@
 name: harness-quickstart
 replicas: <+serviceVariables.repOver>
 
-image: <+artifact.image>
-dockercfg: <+artifact.imagePullSecret>
+image: nginx
+dockercfg: ""
 
 createNamespace: true
 namespace: <+infra.namespace>
