@@ -1,5 +1,5 @@
 name: harness-quickstart
-replicas: 1
+replicas: {{ .Values.replicas }}
 
 image: <+artifact.image>
 dockercfg: <+artifact.imagePullSecret>
